@@ -31,6 +31,7 @@ class StatesScreen < PM::TableScreen
 
   def accessory_switched(args = {})
     @selected_states.include?(args[:name]) ? remove_from_selected(args) : add_to_selected(args)
+    p @selected_states
   end
 
   def add_to_selected(args = {})
